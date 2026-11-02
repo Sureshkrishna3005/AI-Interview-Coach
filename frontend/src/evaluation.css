@@ -1,0 +1,171 @@
+.status-pill.offline {
+  background: #fff0ef;
+  color: #a33b34;
+}
+
+.status-pill.offline .status-dot {
+  background: #d65b54;
+}
+
+.evaluation-card {
+  margin-top: 15px;
+  padding: 14px;
+  border: 1px solid #e6e2f5;
+  border-radius: 10px;
+  background: #fbfaff;
+  color: #3e4055;
+}
+
+.evaluation-score {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.evaluation-score b {
+  color: #5141a0;
+  font-size: 15px;
+}
+
+.evaluation-score span {
+  color: #71728a;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.evaluation-card p {
+  margin: 8px 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dimension-scores {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 14px;
+  margin: 12px 0;
+}
+
+.dimension-score {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 8px;
+  align-items: center;
+  font-size: 9px;
+}
+
+.dimension-score span {
+  color: #686a81;
+}
+
+.dimension-score b {
+  color: #5141a0;
+}
+
+.dimension-score > div {
+  grid-column: 1 / -1;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #e8e6f1;
+}
+
+.dimension-score i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #8372e6;
+}
+
+.evaluation-detail {
+  display: grid;
+  gap: 3px;
+  margin-top: 9px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.evaluation-detail b {
+  color: #53546c;
+}
+
+.evaluation-detail span {
+  color: #73748a;
+}
+
+.improved-answer {
+  padding: 9px;
+  border-radius: 7px;
+  background: #f0edff;
+}
+
+.speech-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.speech-controls .quiet-btn {
+  padding: 8px 11px;
+  font-size: 10px;
+}
+
+.speech-controls .recording {
+  color: #a33b34;
+  border-color: #e5a19c;
+}
+
+.speech-transcript {
+  color: #77798f;
+  font-size: 10px;
+}
+
+.inline-error {
+  color: #a33b34;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.retry-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.question-report {
+  margin-top: 16px;
+}
+
+.report-answer {
+  padding: 15px 0;
+  border-top: 1px solid #e9eaf2;
+}
+
+.report-answer h4 {
+  margin: 4px 0 10px;
+  color: #34354a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.report-answer p {
+  margin: 7px 0;
+  color: #696b80;
+  font-size: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.report-dimensions {
+  max-width: 700px;
+}
+
+@media (max-width: 620px) {
+  .dimension-scores {
+    grid-template-columns: 1fr;
+  }
+}
